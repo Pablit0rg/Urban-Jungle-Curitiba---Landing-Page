@@ -1,5 +1,6 @@
 import { Merriweather, Poppins } from "next/font/google";
-import "./../styles/globals.css"; // Note o caminho relativo, ajuste se necessário
+import "@/styles/globals.css"; // << MUDAMOS AQUI
+// ... resto do código igual ...
 
 // Configurando as fontes otimizadas do Next.js
 const merriweather = Merriweather({ 
