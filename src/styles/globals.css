@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Rolagem suave para todo o site */
+/* Configuração de rolagem suave */
 html {
   scroll-behavior: smooth;
 }
 
+/* Aplicando as cores do tema como padrão */
 body {
   @apply bg-urban-sand text-urban-bark;
+  /* Se o bg-urban-sand falhar, ele fica bege claro */
+  background-color: #F3F0E7; 
+  color: #3D342B;
 }
