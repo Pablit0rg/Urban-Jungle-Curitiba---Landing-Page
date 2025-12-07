@@ -1,6 +1,5 @@
 import { Merriweather, Poppins } from "next/font/google";
-import "../styles/globals.css";
-// ... resto do código igual ...
+import "../styles/globals.css"; // << Caminho corrigido com ../
 
 // Configurando as fontes otimizadas do Next.js
 const merriweather = Merriweather({ 
@@ -27,11 +26,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR" className={`${merriweather.variable} ${poppins.variable}`}>
       <body className="bg-urban-sand text-urban-bark font-sans antialiased selection:bg-urban-moss selection:text-white">
-        {/* Aqui virá o Header no futuro */}
+        {/* O Header e o Footer já estão sendo chamados no page.js, mas idealmente ficariam aqui */}
         <main className="min-h-screen flex flex-col">
           {children}
         </main>
-        {/* Aqui virá o Footer no futuro */}
       </body>
     </html>
   );
